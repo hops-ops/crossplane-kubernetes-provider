@@ -1,12 +1,12 @@
 apiVersion: apiextensions.crossplane.io/v2
 kind: CompositeResourceDefinition
 metadata:
-  name: crossplanekubernetesproviders.hops.ops.com.ai
+  name: kubernetesproviderstacks.crossplane.ops.com.ai
 spec:
-  group: hops.ops.com.ai
+  group: crossplane.ops.com.ai
   names:
-    kind: CrossplaneKubernetesProvider
-    plural: crossplanekubernetesproviders
+    kind: KubernetesProviderStack
+    plural: kubernetesproviderstacks
   scope: Namespaced
   defaultCompositeDeletePolicy: Foreground
   versions:

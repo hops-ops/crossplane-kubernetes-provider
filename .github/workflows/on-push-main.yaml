@@ -25,9 +25,9 @@ jobs:
     with:
       examples: |
         [
-          { "example": "examples/crossplanekubernetesproviders/minimal.yaml" }
+          { "example": "examples/kubernetesproviderstacks/minimal.yaml" }
         ]
-      api_path: apis/crossplanekubernetesproviders
+      api_path: apis/kubernetesproviderstacks
       error_on_missing_schemas: true
 
   test:

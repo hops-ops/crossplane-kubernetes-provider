@@ -1,7 +1,7 @@
 import models.io.upbound.dev.meta.v1alpha1 as metav1alpha1
 
-_composition = "apis/crossplanekubernetesproviders/composition.yaml"
-_xrd = "apis/crossplanekubernetesproviders/definition.yaml"
+_composition = "apis/kubernetesproviderstacks/composition.yaml"
+_xrd = "apis/kubernetesproviderstacks/definition.yaml"
 
 _items = [
     metav1alpha1.CompositionTest {
@@ -12,8 +12,8 @@ _items = [
             timeoutSeconds = 60
             validate = False
             xr = {
-                apiVersion = "hops.ops.com.ai/v1alpha1"
-                kind = "CrossplaneKubernetesProvider"
+                apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                kind = "KubernetesProviderStack"
                 metadata.name = "kubernetes"
                 spec = {
                     clusterName = "my-cluster"
@@ -56,8 +56,8 @@ _items = [
             timeoutSeconds = 60
             validate = False
             xr = {
-                apiVersion = "hops.ops.com.ai/v1alpha1"
-                kind = "CrossplaneKubernetesProvider"
+                apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                kind = "KubernetesProviderStack"
                 metadata.name = "kubernetes"
                 spec = {
                     clusterName = "my-cluster"
@@ -86,8 +86,8 @@ _items = [
             timeoutSeconds = 60
             validate = False
             xr = {
-                apiVersion = "hops.ops.com.ai/v1alpha1"
-                kind = "CrossplaneKubernetesProvider"
+                apiVersion = "crossplane.ops.com.ai/v1alpha1"
+                kind = "KubernetesProviderStack"
                 metadata.name = "kubernetes"
                 spec = {
                     clusterName = "my-cluster"

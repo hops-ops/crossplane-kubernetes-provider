@@ -1,4 +1,4 @@
-# crossplane-kubernetes-provider
+# crossplane-kubernetes-provider-stack
 
 Installs provider-kubernetes plus its injected-identity ProviderConfig and RBAC binding in the target Crossplane cluster.
 
@@ -12,7 +12,7 @@ resources, and ProviderConfig can be reconciled independently.
 
 ### Stage 1: Getting Started
 
-Apply the minimal example in `examples/crossplanekubernetesproviders/minimal.yaml` after
+Apply the minimal example in `examples/kubernetesproviderstacks/minimal.yaml` after
 the target cluster already has Crossplane core installed.
 
 ### Stage 2: Growing

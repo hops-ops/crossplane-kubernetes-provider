@@ -1,7 +1,7 @@
 apiVersion: meta.dev.upbound.io/v2alpha1
 kind: Project
 metadata:
-  name: crossplane-kubernetes-provider
+  name: crossplane-kubernetes-provider-stack
 spec:
   dependsOn:
   - apiVersion: pkg.crossplane.io/v1
@@ -17,7 +17,7 @@ spec:
   license: Apache-2.0
   maintainer: Patrick Lee Scott <pat@patscott.io>
   readme: |
-    # crossplane-kubernetes-provider
+    # crossplane-kubernetes-provider-stack
     Installs provider-kubernetes plus its injected-identity ProviderConfig and RBAC binding in the target Crossplane cluster.
-  repository: ghcr.io/hops-ops/crossplane-kubernetes-provider
-  source: github.com/hops-ops/crossplane-kubernetes-provider
+  repository: ghcr.io/hops-ops/crossplane-kubernetes-provider-stack
+  source: github.com/hops-ops/crossplane-kubernetes-provider-stack
